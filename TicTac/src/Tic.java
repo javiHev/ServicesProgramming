@@ -1,16 +1,18 @@
 public class Tic extends Thread {
     //Variables
-    private int hilo;
+    private Cola cola;
 
-    public Tic(int hilo) {
-        this.hilo = hilo;
+
+    public Tic(Cola cola) {
+        this.cola = cola;
     }
-    public void run(){
-        while(true){
-            System.out.println("TIC");
+
+    @Override
+    public void run() {
+        while(true) {
+            cola.get("Tic");
             try {
-                sleep(1000);
-                this.yield();
+                sleep(2000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
