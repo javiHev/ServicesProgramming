@@ -8,9 +8,9 @@ public class Cafeteria {
         Barista barista2=new Barista();
         barista1.start();
         barista2.start();
-        Cliente cliente1=new Cliente("Martita",10);
-        Cliente cliente2=new Cliente("No",1);
-        Cliente cliente3=new Cliente("Que no",2);
+        Cliente cliente1=new Cliente("Jaime",100);
+        Cliente cliente2=new Cliente("Juan",10);
+        Cliente cliente3=new Cliente("Paco",1);
         cliente1.start();
         cliente2.start();
         cliente3.start();

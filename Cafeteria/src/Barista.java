@@ -1,5 +1,5 @@
 public class Barista extends Thread{
-    public void prepararCafe(Cliente cliente){
+/*    public void prepararCafe(Cliente cliente){
         System.out.println("Barista está preparando café para " + cliente.getNombre());
         try {
             Thread.sleep(2000); // Simula el tiempo de preparación del café.
@@ -8,7 +8,7 @@ public class Barista extends Thread{
         }
         System.out.println("Barista ha terminado de preparar café para " + cliente.getNombre());
 
-    }
+    }*/
     @Override
     public void run(){
         while (true) {
