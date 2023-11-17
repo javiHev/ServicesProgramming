@@ -1,6 +1,6 @@
 public class Cliente extends Thread {
-    private String nombre;
-    private int tiempoEspera;
+    private final String nombre;
+    private final int tiempoEspera;
 
     public Cliente(String nombre, int tiempoEspera) {
         this.nombre = nombre;
