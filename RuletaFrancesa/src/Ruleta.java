@@ -26,7 +26,15 @@ public class Ruleta {
 
     public void girar() {
         numeroGanador = random.nextInt(37); // Números de 0 a 36
-        System.out.println("La ruleta se ha detenido en el número: " + numeroGanador);
+        if (negros.contains(numeroGanador)) {
+            System.out.println("La ruleta se ha detenido en el número: " + numeroGanador + " Negro \uD83C\uDFC6");
+        } else if (rojos.contains(numeroGanador)) {
+            System.out.println("La ruleta se ha detenido en el número: " + numeroGanador + " Rojo \uD83C\uDFC6");
+
+        } else {
+            System.out.println("La ruleta se ha detenido en el número: " + numeroGanador+ " \uD83C\uDFC6");
+
+        }
     }
 
     // Métodos adicionales si necesitas verificar si un número es rojo o negro
