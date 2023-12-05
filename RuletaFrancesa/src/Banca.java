@@ -1,31 +1,17 @@
-import java.util.List;
-
 public class Banca {
     private int dinero;
-    private List<Jugadores>jugadores;
-
-    public Banca(int dinero, List<Jugadores> jugadores) {
-        this.dinero = dinero;
-        this.jugadores = jugadores;
+    public Banca(int dineroInicial) {
+        this.dinero = dineroInicial;
     }
-
-    public int getDinero() {
+    public int getDineroBanca(){
         return dinero;
     }
-
-    public void setDinero(int dinero) {
-        this.dinero = dinero;
+    public void aumentarDinero(int cantidad) {
+        dinero += cantidad;
     }
-    public boolean aceptarApuesta(Jugadores jugador){
-      if(jugadores.contains(jugador)){
-          return jugador.getApuesta() <= jugador.getSaldo();
 
-      }else{
-          System.out.println("Este jugador no está jugando");
-          return false;
-      }
+    public void reducirDinero(int cantidad) {
+        dinero -= cantidad;
     }
-    public void compruebaOpcion(){
 
-    }
 }
